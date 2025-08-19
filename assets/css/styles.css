@@ -212,10 +212,10 @@ p {
   align-self: start;
 }
 
+
 .bullet-list {
   margin: 0;
-  padding: 0;
-  list-style: none;
+  padding-left: 20px;
 }
 
 .project-list {
@@ -286,7 +286,7 @@ p {
 
 .tool {
   color: var(--text-900);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .tool-desc {
@@ -310,6 +310,7 @@ p {
 .site-footer p {
   color: var(--text-500);
   font-size: 0.9375rem;
+  text-align: center;
 }
 
 /* Large Desktop (1400px+) - Maintains desktop experience */
@@ -439,20 +440,8 @@ p {
     margin-bottom: 20px;
   }
   
-  h2 {
-    font-size: 0.9375rem;
-  }
-  
-  h3 {
-    font-size: 0.8125rem;
-  }
-  
   body {
-    font-size: 15px;
-  }
-  
-  .eyebrow {
-    font-size: 0.8125rem;
+    font-size: 16px;
   }
   
   .scroll-down {
@@ -534,10 +523,6 @@ p {
     margin-right: 16px;
   }
   
-  .section > h2 {
-    margin-bottom: 16px;
-  }
-  
   .section-lead p {
     margin-bottom: 18px;
   }
@@ -585,8 +570,7 @@ p {
   
   .section {
     padding: 56px 0;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin: 0 12px;
   }
   
   .section > h2 {
@@ -608,18 +592,6 @@ p {
   
   .tool-row {
     gap: 10px;
-  }
-  
-  h2 {
-    font-size: 0.8125rem;
-  }
-  
-  h3 {
-    font-size: 0.6875rem;
-  }
-  
-  body {
-    font-size: 14px;
   }
   
   .eyebrow {
@@ -664,10 +636,6 @@ p {
     margin-right: 8px;
   }
   
-  .section > h2 {
-    margin-bottom: 12px;
-  }
-  
   .section-lead p {
     margin-bottom: 14px;
   }
@@ -677,14 +645,16 @@ p {
   }
   
   .project-link {
-    grid-template-columns: 1fr;
     gap: 8px;
     padding: 16px 8px;
   }
   
   .tool-row {
-    grid-template-columns: 1fr;
     gap: 8px;
+  }
+
+  span.tool {
+    font-size: 15px;
   }
   
   .project-name,
@@ -697,22 +667,6 @@ p {
     font-size: 0.875rem;
   }
   
-  body {
-    font-size: 14px;
-  }
-  
-  h2 {
-    font-size: 0.9375rem;
-  }
-  
-  .eyebrow {
-    font-size: 0.8125rem;
-  }
-  
-  .scroll-down {
-    font-size: 1.125rem;
-  }
-  
   .site-footer .container {
     padding-top: 36px;
     padding-bottom: 36px;
@@ -722,8 +676,7 @@ p {
 /* Small Mobile (360px) - Small mobile devices */
 @media (max-width: 360px) {
   .container {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 0 16px;
   }
   
   .grid-2 {
@@ -763,26 +716,6 @@ p {
   
   .tool-row {
     gap: 6px;
-  }
-  
-  h2 {
-    font-size: 0.75rem;
-  }
-  
-  h3 {
-    font-size: 0.625rem;
-  }
-  
-  body {
-    font-size: 13px;
-  }
-  
-  .eyebrow {
-    font-size: 0.6875rem;
-  }
-  
-  .scroll-down {
-    font-size: 0.875rem;
   }
   
   .site-footer .container {
