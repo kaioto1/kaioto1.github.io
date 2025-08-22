@@ -84,6 +84,10 @@ li {
   color: var(--light-text-900);
 }
 
+li.rotated {
+  align-items: center;
+}
+
 a {
   text-decoration: none;
 }
@@ -95,6 +99,11 @@ a.inline {
 
 .material-symbols-outlined {
   font-size: var(--icon);
+  color: var(--light-text-900);
+}
+
+.material-symbols-outlined.light {
+  color: var(--light-line-100);
 }
 
 .container {
@@ -270,12 +279,12 @@ a.inline {
   display: grid;
   grid-template-columns: 1fr 1fr auto;
   gap: 16px;
-  border-top: 1px solid var(--light-line-900);
+  /*border-top: 1px solid var(--light-line-900);*/
   align-items: center;
 }
 
 .tool-list:last-child {
-  border-bottom: 1px solid var(--light-line-900);
+  /*border-bottom: 1px solid var(--light-line-900);*/
   padding-bottom: 0px;
 }
 
