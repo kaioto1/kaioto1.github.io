@@ -81,7 +81,16 @@ ul {
 }
 
 li {
-  color: var(--light-line-900);
+  color: var(--light-text-900);
+}
+
+a {
+  text-decoration: none;
+}
+
+a.inline {
+  text-decoration: underline;
+  color: var(--light-text-900);
 }
 
 .material-symbols-outlined {
@@ -124,6 +133,39 @@ li {
   text-decoration: none;
   font-weight: 400;
   letter-spacing: 0.08em;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+}
+
+.logo span {
+  display: inline-block;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.logo::after {
+  content: "Adrian";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(0);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.logo:hover span {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.logo:hover::after {
+  top: 0;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .nav {
@@ -232,7 +274,7 @@ li {
   align-items: center;
 }
 
-.tool-row:last-child {
+.tool-list:last-child {
   border-bottom: 1px solid var(--light-line-900);
   padding-bottom: 0px;
 }
