@@ -277,7 +277,7 @@ a.inline {
 
 .tool-row {
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  grid-template-columns: 1fr 2fr auto;
   gap: 16px;
   /*border-top: 1px solid var(--light-line-900);*/
   align-items: center;
