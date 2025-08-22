@@ -76,6 +76,10 @@ h2 {
   color: var(--light);
 }
 
+ul {
+  list-style-type: none;
+}
+
 li {
   color: var(--light-line-900);
 }
@@ -258,4 +262,79 @@ li {
 
 .site-footer p {
   text-align: center;
+}
+
+/* Extra Small Screens (Mobile) */
+@media only screen and (max-width: 576px) {
+  /* CSS rules specific for extra small screens */
+  .container {
+    width: 100%;
+    padding: 48px 16px;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  h1 {
+    font-size: xx-large;
+    max-width: 400px;
+  }
+
+  .section-lead p {
+    margin-top: 8px;
+  }
+}
+
+/* Small Screens (Tablets) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  /* CSS rules specific for small screens */
+  .container {
+    width: 100%;
+    padding: 48px 16px;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+
+}
+
+/* Medium Screens (Large Tablets) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* CSS rules specific for medium screens */
+  .container {
+    width: 90%;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  h1 {
+    max-width: 700px;
+  }
+}
+
+/* Large Screens (Desktops) */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* CSS rules specific for large screens */
+  .container {
+    width: 80%; /* Adjust layout for narrower container width on desktops */
+  }
+}
+
+/* Extra Large Screens (Large Desktops) */
+@media only screen and (min-width: 1441px) {
+  /* CSS rules specific for extra large screens */
+  h1 {
+    max-width: 700px;
+  }
 }
